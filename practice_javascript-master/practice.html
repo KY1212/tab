@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TV観戦・番組参加の募集サイト</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/practice.css">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <!-- <script src="js/vendor/easing.js"></script> -->
+  <script src="js/vendor/jquery-1.10.2.min.js"></script>
+  <script src="./js/vendor/jquery-ui-1.10.3.custom.min.js"></script>
+  <script src="js/practice.js"></script>
+</head>
+<body>
+  <header>
+    <div class="wrapper">
+    <ul>
+      <li>
+        <a href="#">
+          sampleとは
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          sampleとは
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          よくある質問
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          禁止事項
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          お問い合わせ
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          お問い合わせ<br>
+          (法人様専用)
+        </a>
+      </li>
+      <li class="bgWhite squareBtn">
+        <a href="#" class="txtBrown">
+          マイページ
+        </a>
+      </li>
+      <li class="bgBlue squareBtn">
+        <a href="#" class="txtWhite">
+          新規会員登録
+        </a>
+      </li>
+    </ul>
+    <div class="menu">
+      <i class="fas fa-bars fa-2x"></i>
+    </div>
+    <div class="menuList">
+      <p class="menuHeading">
+        <span>MENU</span>
+        <i class="fas fa-arrow-left fa-1x"></i>
+      </p>
+      <ul>
+        <li>
+          <a href="#">
+            sampleとは
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            sampleとは
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            よくある質問
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            禁止事項
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            お問い合わせ
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            お問い合わせ<br>
+            (法人様専用)
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="mypage">
+      <i class="far fa-smile fa-3x"></i>
+      <p>マイページ</p>
+    </div>
+  </div>
+  </header>
+  <div class="hero">
+    <div class="wrapper">
+      <p>
+        <span class="largeTxt">TV観覧・番組参加の</span><br>
+        <span class="mediumTxt">sample pageへようこそ！</span>
+      </p>
+      <div class="bgBlue squareBtn">
+        <p>
+          <a href="#" class="smallTxt">
+            新規会員登録はこちら
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+  <main class="wrapper">
+    <!-- タブ -->
+    <div class="tabNav">
+      <ul>
+        <li class="active"><a href="#tab1" class="active">番組参加</a></li>
+        <li><a href="#tab2">番組観覧</a></li>
+        <li><a href="#tab3">その他の募集</a></li>
+        <li><a href="#tab4">収録場所一覧</a></li>
+      </ul>
+    </div>
+    <!-- タブパネル -->
+    <div class="tabs">
+      <section class="tab" id="tab1">
+        <div class="joinTab">
+          <!-- タブ内タブ -->
+          <div class="genreNav">
+            <ul>
+              <li class="active"><a href="#genreTab0" class="active">全てのジャンル</a></li>
+              <li><a href="#genreTab1">音楽</a></li>
+              <li><a href="#genreTab2">CM</a></li>
+              <li><a href="#genreTab3">スポーツ</a></li>
+              <li><a href="#genreTab4">新番組</a></li>
+              <li><a href="#genreTab5">バラエティ</a></li>
+              <li><a href="#genreTab6">スペシャル</a></li>
+            </ul>
+          </div>
+          <div class="genreNavSP">
+            <p>ジャンルを選択 <i class="fas fa-angle-down fa-1x"></i></p>
+            <ul class="none">
+              <li class="active"><a href="#genreTab0" class="active">全てのジャンル</a></li>
+              <li><a href="#genreTab1">音楽</a></li>
+              <li><a href="#genreTab2">CM</a></li>
+              <li><a href="#genreTab3">スポーツ</a></li>
+              <li><a href="#genreTab4">新番組</a></li>
+              <li><a href="#genreTab5">バラエティ</a></li>
+              <li><a href="#genreTab6">スペシャル</a></li>
+            </ul>
+          </div>
+          <div class="calendarSP">
+            <p class="calendarTop">
+              日付を選択<i class="fas fa-angle-down fa-1x"></i>
+            </p>
+            <div class="date none">
+              <h2 class="calendar-title"><span id="js-year"></span>年 <span id="js-month"></span>月</h2>
+              <table class="calendar-table">
+                <thead>
+                  <tr><th>日</th><th>月</th><th>火</th><th>水</th><th>木</th><th>金</th><th>土</th></tr>
+                </thead>
+                <tbody id="js-calendar-body-sp"></tbody>
+              </table>
+            </div>
+          </div>
+          <div class="genreTabs">
+            <section class="genreTab" id="genreTab0">
+              <div class="wrapper">
+                <div class="recruitingWrap">
+                </div>
+                <div class="calendar">
+                  <p class="calendarTop">
+                    <span>日付を選択</span>
+                    <span>都合のいい日をクリックしてください</span>
+                  </p>
+                  <div class="date">
+                    <h2 class="calendar-title"><span id="js-year"></span>年 <span id="js-month"></span>月</h2>
+                    <table class="calendar-table">
+                      <thead>
+                        <tr><th>日</th><th>月</th><th>火</th><th>水</th><th>木</th><th>金</th><th>土</th></tr>
+                      </thead>
+                      <tbody id="js-calendar-body-pc"></tbody>
+                    </table>
+                  </div>
+                </div>
+
+              </div>
+            </section>
+            <section class="genreTab" id="genreTab1">
+              <div class="music">music</div>
+            </section>
+            <section class="genreTab" id="genreTab2">3
+            </section>
+            <section class="genreTab" id="genreTab3">4
+            </section>
+            <section class="genreTab" id="genreTab4">5
+            </section>
+            <section class="genreTab" id="genreTab5">6
+            </section>
+            <section class="genreTab" id="genreTab6">7
+            </section>
+          </div>
+
+        </div>
+      </section>
+      <section class="tab" id="tab2">
+        <div class="viewTab">
+          <div class="music">music</div>
+
+        </div>
+      </section>
+      <section class="tab" id="tab3">
+        <div class="etcTab">3</div>
+      </section>
+      <section class="tab" id="tab4">
+        <div class="locationTab">4</div>
+      </section>
+    </div>
+  </main>
+</body>
+</html>

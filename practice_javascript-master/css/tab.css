@@ -1,0 +1,80 @@
+@charset "utf-8";
+
+/*=====blobal=====*/
+* {
+  color: #333;
+  background-color: #fff9f4;
+}
+
+body {
+  min-width: 700px;
+}
+
+/*=====tabs=====*/
+.tabWrap {
+  padding: 202px 0 262px 0;
+}
+
+.tabWrap .tabs {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 65px;
+}
+
+.tabWrap .tabs .tab {
+  width: 200px;
+  display: block;
+  text-align: center;
+  border-radius: 10px 10px 0 0;
+  background-color: #3fa6b4;
+  color: #fff;
+  height: 60px;
+  line-height: 60px;
+}
+
+.tabWrap .tabs .tab.active {
+  background-color: #d8d8d8;
+  color: #fff;
+  height: 65px;
+  line-height: 65px;
+}
+
+.tabWrap .tabs .tab:hover {
+  opacity: 0.8;
+  background-color: #d8d8d8;
+  color: #fff;
+  height: 65px;
+  line-height: 65px;
+}
+
+.tabWrap .tabs .tab + .tab {
+  margin-left: 24px;
+}
+
+/*=====tabPanel=====*/
+.tabWrap .tabPanels {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.tabWrap .tabPanel {
+  border-top: solid 10px #d8d8d8;
+  background-color: #fff;
+  height: 442px;
+  width: 648px;
+  padding: 24px 16px;
+  display: none;
+}
+
+.tabWrap .tabPanel.active {
+  display: block;
+}
+
+.tabWrap .tabPanels .tabPanel p {
+  background-color: #fff;
+  line-height: 20px;
+}
+
+
