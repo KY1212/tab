@@ -1,13 +1,9 @@
 @charset "utf-8";
 
 /*=====blobal=====*/
-* {
-  color: #333;
-  background-color: #fff9f4;
-}
-
 body {
   min-width: 700px;
+  background-color: #fff9f4;
 }
 
 /*=====tabs=====*/
@@ -19,62 +15,53 @@ body {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  height: 65px;
 }
 
-.tabWrap .tabs .tab {
-  width: 200px;
-  display: block;
-  text-align: center;
-  border-radius: 10px 10px 0 0;
+.tabs .tab {
   background-color: #3fa6b4;
   color: #fff;
-  height: 60px;
+  width: 200px;
   line-height: 60px;
+  text-align: center;
+  border-radius: 10px 10px 0 0;
+  cursor: pointer;
 }
 
-.tabWrap .tabs .tab.active {
-  background-color: #d8d8d8;
-  color: #fff;
-  height: 65px;
-  line-height: 65px;
-}
-
-.tabWrap .tabs .tab:hover {
-  opacity: 0.8;
-  background-color: #d8d8d8;
-  color: #fff;
-  height: 65px;
-  line-height: 65px;
-}
-
-.tabWrap .tabs .tab + .tab {
+.tabs .tab + .tab {
   margin-left: 24px;
 }
 
-/*=====tabPanel=====*/
-.tabWrap .tabPanels {
-  display: flex;
-  justify-content: center;
-  position: relative;
+.tabs .tab:not(.active):hover {
+  background-color: #d8d8d8;
+  color: #fff;
+  height: 65px;
+  line-height: 65px;
+  opacity: 0.8;
 }
 
-.tabWrap .tabPanel {
-  border-top: solid 10px #d8d8d8;
+.tabs .tab.active {
+  background-color: #d8d8d8;
+  height: 65px;
+  line-height: 65px;
+}
+
+/*=====tabPanels=====*/
+.tabPanels {
+  display: flex;
+  justify-content: center;
+}
+
+.tabPanels .tabPanel {
   background-color: #fff;
+  border-top: solid 10px #d8d8d8;
   height: 442px;
   width: 648px;
   padding: 24px 16px;
   display: none;
 }
 
-.tabWrap .tabPanel.active {
+.tabPanels .tabPanel.active {
   display: block;
-}
-
-.tabWrap .tabPanels .tabPanel p {
-  background-color: #fff;
-  line-height: 20px;
 }
 
 
